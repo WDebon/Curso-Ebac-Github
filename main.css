@@ -65,7 +65,7 @@ header li a {
 
 .articles article a {
     border-radius: 10px;
-    background-color: rgba(27, 13, 13, 0.699);
+    /* background-color: rgba(27, 13, 13, 0.699); */
     padding: 8px;
     display: block;
     color: beige;
