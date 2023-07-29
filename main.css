@@ -55,8 +55,8 @@ header li a {
 
 .articles article {
     width: 33%;
-    background-color: rgb(73, 43, 64);
     padding: 10px;
+    border-radius: 0px 0px 15px 15px;
 }
 
 .articles article p {
@@ -78,7 +78,7 @@ section {
 }
 
 section h2 {
-    background-color: rgb(116, 84, 121);
+    border-radius: 15px 15px 0px 0px;
     margin: auto;
     padding: 10px;
 }
