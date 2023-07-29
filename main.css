@@ -11,33 +11,6 @@ body {
     background-color: rgb(48, 38, 51);
 }
 
-header li { /*li = link/List*/
-    display: inline;
-}
-
-body>header { /*só vai pegar o header dentro do body*/
-    color: black;
-    background-color: rgb(187, 99, 128);
-    font-size: larger;
-}
-
-header .container { /* .xxx = classe ----- #xxx = id*/
-    padding: 20px 10%;
-    display: flex;
-    align-items: center;
-    background-color: rgb(187, 99, 128);
-    justify-content: space-between;
-}
-
-header li a {
-    color: rgb(32, 15, 24);
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: rgba(0, 0, 0, 0.247);
-    border-radius: 10px;
-    display: inline-flex;
-}
-
 .container {
     margin: auto;
     width: 1366px;
