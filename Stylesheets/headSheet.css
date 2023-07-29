@@ -4,15 +4,15 @@ header li { /*li = link/List*/
 
 body>header { /*só vai pegar o header dentro do body*/
     color: black;
-    background-color: rgb(187, 99, 128);
+    background-color: #bb6380;
     font-size: larger;
 }
 
 header .container { /* .xxx = classe ----- #xxx = id*/
     padding: 20px 10%;
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    background-color: rgb(187, 99, 128);
+    background-color: #bb6380;
     justify-content: space-between;
 }
 
@@ -23,4 +23,5 @@ header li a {
     background-color: rgba(0, 0, 0, 0.247);
     border-radius: 10px;
     display: inline-flex;
+    margin-right: auto;
 }
