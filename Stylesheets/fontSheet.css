@@ -1,0 +1,25 @@
+.articles h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.articles article a{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.articles article p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header li{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+}
