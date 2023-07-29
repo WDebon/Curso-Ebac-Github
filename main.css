@@ -7,20 +7,21 @@
 
 /* Reset! */
 
-body{
+body {
     background-color: rgb(48, 38, 51);
 }
+
 header li {
     display: inline;
 }
 
-body > header {
+body>header {
     color: black;
     background-color: rgb(187, 99, 128);
     font-size: larger;
 }
 
-header .container{
+header .container {
     padding: 20px 10%;
     display: flex;
     align-items: center;
@@ -28,13 +29,13 @@ header .container{
     justify-content: space-between;
 }
 
-header li a{
+header li a {
     color: rgb(32, 15, 24);
     text-decoration: none;
     padding: 10px 20px;
     background-color: rgba(0, 0, 0, 0.247);
     border-radius: 10px;
-    display:inline-flex;
+    display: inline-flex;
 }
 
 .container {
@@ -58,11 +59,11 @@ header li a{
     padding: 10px;
 }
 
-.articles article p{
-    padding: 10px;	
+.articles article p {
+    padding: 10px;
 }
 
-.articles article a{
+.articles article a {
     border-radius: 10px;
     background-color: rgba(27, 13, 13, 0.699);
     padding: 8px;
@@ -72,11 +73,11 @@ header li a{
     text-align: center;
 }
 
-section{
+section {
     padding: 16px 10px;
 }
 
-section h2{
+section h2 {
     background-color: rgb(116, 84, 121);
     margin: auto;
     padding: 10px;
