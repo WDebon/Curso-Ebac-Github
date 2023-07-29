@@ -1,12 +1,12 @@
 #economy article{
-    background-color: rgb(73, 43, 64); 
+    background-color: #2b492c; 
     /* placeholder colors */
 }
 
 #economy article  a {
-    background-color: rgba(27, 13, 13, 0.699);
+    background-color: #0d1b0fb2;
 }
 
 #economy h2 {
-    background-color: rgb(116, 84, 121);
+    background-color: #547960;
 }
