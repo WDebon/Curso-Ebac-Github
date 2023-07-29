@@ -12,7 +12,7 @@ body {
 }
 
 hr{
-    border: 3px solid #00000081;
+    border: 3px solid #00000081; /* Tem que usar border n color*/
     border-radius: 15px;
 }
 
