@@ -31,14 +31,15 @@ header .container{
 header li a{
     color: rgb(32, 15, 24);
     text-decoration: none;
-    padding: 10px 50px;
+    padding: 10px 20px;
     background-color: rgba(0, 0, 0, 0.247);
     border-radius: 10px;
+    display:inline-flex;
 }
 
 .container {
     margin: auto;
-    width: 1166px;
+    width: 1366px;
 }
 
 .articles {
