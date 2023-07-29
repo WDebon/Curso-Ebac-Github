@@ -11,17 +11,17 @@ body {
     background-color: rgb(48, 38, 51);
 }
 
-header li {
+header li { /*li = link/List*/
     display: inline;
 }
 
-body>header {
+body>header { /*só vai pegar o header dentro do body*/
     color: black;
     background-color: rgb(187, 99, 128);
     font-size: larger;
 }
 
-header .container {
+header .container { /* .xxx = classe ----- #xxx = id*/
     padding: 20px 10%;
     display: flex;
     align-items: center;
