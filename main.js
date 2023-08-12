@@ -1,8 +1,8 @@
 const InputA = document.getElementById('imA');
 const InputB = document.getElementById('imB');
-const erro = document.querySelectorAll(".inp"); // querySelector deixa você pegar qualquer parte do html
+const erro = document.querySelectorAll(".inp"); //qsAll cria uma ''string'' (Nodelist) então para afetar todos os selecionados temos que tratalo como uma
 const butN = document.getElementById("form");
-const menOr = document.querySelector(".men")
+const menOr = document.querySelector(".men"); // querySelector deixa você pegar qualquer parte do html
 
 menOr.classList.remove("men")
 
