@@ -1,0 +1,84 @@
+* {
+/*Box model stuff*/
+    margin: 0px;
+}
+
+body {
+/*Box model stuff*/
+    padding: 100px;
+    background-color: rgb(61, 61, 61);
+}
+
+.container {
+/*Box model stuff*/
+    width: 100%;
+/*Typography stuff*/
+    text-align: center;
+}
+
+ul {
+/*Miscellaneous*/
+    /* text-align: center; */
+}
+
+li:hover {
+/*Box model stuff*/
+    padding: 4px;
+    border-radius: 10px;
+    background-color: rgb(92, 226, 103);
+}
+
+li {
+/*Display stuff*/
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+/*Box model stuff*/
+    width: 40%;
+    max-width: 300px;
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3px;
+    border-radius: 2px;
+    background-color: brown;
+/*Manipulations stuff*/
+    transition: ease 0.5s;
+/*Miscellaneous*/
+    cursor: pointer;
+}
+
+.txt {
+/*Box model stuff*/
+    max-width: 150px;
+    padding: 2px;
+/*Miscellaneous*/
+    overflow-x: auto;
+}
+
+::-webkit-scrollbar {
+/*Box model stuff*/
+    height: 3px;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.479);
+}
+
+::-webkit-scrollbar-thumb {
+/*Box model stuff*/
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.541);
+}
+
+.date {
+/*Box model stuff*/
+    width: 30%;
+    padding: 2px;
+    border-radius: 2px;
+    background-color: rgba(29, 29, 29, 0.418);
+}
+
+img {
+/*Box model stuff*/
+    width: 20px;
+}
