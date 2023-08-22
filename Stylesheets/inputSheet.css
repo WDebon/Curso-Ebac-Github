@@ -1,0 +1,47 @@
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+input{
+    height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: none;
+    margin-left: 5px;
+    background-color: #ffffff00;
+    border-bottom: 2px solid black;
+    border-radius: 2px;
+    color: black;
+    transition: 0.5s ease;
+}
+
+input:hover{
+    height: 40px;
+}
+
+input::placeholder{
+    color: black;
+}
+
+.osInps{
+    margin-right: 5px;
+    padding: 5px;
+    border-style: inset;
+    border-width: 1px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.103);
+}
+
+#butn{
+    height: 45px;
+    border: none;
+    background-color: rgb(154, 228, 144);
+    border-radius: 2px;
+}
