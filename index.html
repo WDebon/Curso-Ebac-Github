@@ -18,8 +18,10 @@
         <h1>Lista de tarefas</h1>
         <form>
             <div class="osInps">
-                <input type="text" name="tarefa" id="tarefa" placeholder="Insira a atividade"><span class="red">*</span>
-                <input type="date" name="data" id="data"><span class="red">*</span>
+                <label for="tarefa">Tarefa:</label>
+                <input type="text" name="tarefa" id="tarefa" placeholder="Insira a atividade" required><span class="red">*</span>
+                <label for="data">Término:</label>
+                <input type="date" name="data" id="data" required><span class="red">*</span>
             </div>
             <button type="submit" id="butn">Add</button>
         </form>
