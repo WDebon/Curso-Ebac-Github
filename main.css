@@ -1,6 +1,7 @@
 * {
 /*Box model stuff*/
     margin: 0px;
+    font-family: 'Dosis', sans-serif;
 }
 
 body {
@@ -14,4 +15,13 @@ body {
     width: 100%;
 /*Typography stuff*/
     text-align: center;
+}
+
+.red{
+    color: brown;
+    font-size: small;
+}
+
+h1{
+    color: rgb(20, 20, 20);
 }
