@@ -21,6 +21,15 @@ ul {
     /* text-align: center; */
 }
 
+/* @media (max-width = 200) {
+    .container{
+        display: flex;
+    } 
+    li{
+        display: flex;
+    } 
+} */
+
 li:hover {
 /*Box model stuff*/
     padding: 4px;
@@ -29,24 +38,14 @@ li:hover {
 }
 
 li {
-/*Display stuff*/
-    display: block;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-/*Box model stuff*/
-    width: 40%;
-    max-width: 300px;
-    margin: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 3px;
-    border-radius: 2px;
-    background-color: brown;
-/*Manipulations stuff*/
-    transition: ease 0.5s;
-/*Miscellaneous*/
-    cursor: pointer;
+/*Display stuff*/display: block;display: flex;align-items: center;
+/*Box model stuff*/width: 300px;max-width: 700px;margin: 5px;margin-left: auto;margin-right: auto;padding: 3px;border-radius: 2px;background-color: brown;display: flex;
+/*Manipulations stuff*/transition: ease 0.5s;
+/*Miscellaneous*/cursor: pointer;justify-content: space-between;flex-wrap: wrap;flex-direction: row-reverse;}
+
+li:hover img{
+    content: url(/Green\ check.png);
+    /* width: 15px; */
 }
 
 .txt {
@@ -81,4 +80,6 @@ li {
 img {
 /*Box model stuff*/
     width: 20px;
+    transition: ease 0.5s;
 }
+
