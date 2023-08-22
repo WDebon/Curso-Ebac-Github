@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./Stylesheets/listSheet.css">
     <link rel="stylesheet" href="./Stylesheets/inputSheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Spice&family=Caveat:wght@500;700&family=Changa:wght@200&family=Lilita+One&family=Quicksand:wght@300&family=Vina+Sans&display=swap" rel="stylesheet" />
     
 </head>
 
@@ -16,9 +17,11 @@
     <div class="container">
         <h1>Lista de tarefas</h1>
         <form>
-            <input type="text" name="tarefa" id="tarefa" placeholder="Lorem ipsium dolor si amet">
-            <input type="date" name="data" id="data">
-            <button type="submit">Add</button>
+            <div class="osInps">
+                <input type="text" name="tarefa" id="tarefa" placeholder="Insira a atividade"><span class="red">*</span>
+                <input type="date" name="data" id="data"><span class="red">*</span>
+            </div>
+            <button type="submit" id="butn">Add</button>
         </form>
         
             <li class="off"><span><img src="./Red check.png"></span><span class="txt">Abacate</span><span class="date">[10/40/2054]</span></li>
