@@ -40,7 +40,10 @@ li {
     /*Box model stuff*/
     padding: 4px;
     background-color: rgb(92, 226, 103);
+    cursor:default;
 }
+
+.on img{content: url(/Green\ check.png); transform: scaleX(1);}
 
 .txt {
     /*Box model stuff*/
