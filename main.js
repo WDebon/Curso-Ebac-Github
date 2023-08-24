@@ -54,8 +54,12 @@ $('form').submit(function (e) {
     e.preventDefault();
         // li.appendTo('body')
 
-        console.log(added_Date)
-        write(atividade,added_Date,current_Date)  
+        console.log(added_Date.val().split())
+        console.log(added_Date.val().split("-").reverse())
+        console.log(added_Date.val().split("-").reverse().splice(3,0, "OI"))
+        let new_AddDate = "[" + added_Date.val().split().reverse().toString().replaceAll("-", "/") + "]"
+        write(atividade,new_AddDate,current_Date)  
+
         atividade.val("")
         added_Date.val("") 
 });
