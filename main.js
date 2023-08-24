@@ -56,8 +56,7 @@ $('form').submit(function (e) {
 
         console.log(added_Date.val().split())
         console.log(added_Date.val().split("-").reverse())
-        console.log(added_Date.val().split("-").reverse().splice(3,0, "OI"))
-        let new_AddDate = "[" + added_Date.val().split().reverse().toString().replaceAll("-", "/") + "]"
+        let new_AddDate = "[" + added_Date.val().split("-").reverse().toString().replaceAll(",", "/") + "]"
         write(atividade,new_AddDate,current_Date)  
 
         atividade.val("")
