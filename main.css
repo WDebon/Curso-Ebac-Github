@@ -8,6 +8,7 @@ body {
 /*Box model stuff*/
     padding: 100px;
     background-color: rgb(61, 61, 61);
+    box-shadow: 0px 0px 10px inset #090c13a8;
 }
 
 .container {
@@ -30,4 +31,5 @@ h1{
     width: fit-content;
     margin: 0px;
     margin-right: 200px;
+    box-shadow: 0px 0px 8px #000000ad;
 }
