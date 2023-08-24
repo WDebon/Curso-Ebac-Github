@@ -4,70 +4,49 @@ const classOff = $('.off')
 const date = new Date()
 const year = date.getFullYear()
 const day = date.getDate()
-const month = date.getMonth() 
-var current_Date = "["+day+"/"+month+"/"+year+"]";
+const month = date.getMonth()
+var current_Date = "[" + day + "/" + month + "/" + year + "]";
 console.log(current_Date)
-// const milli = date.getTime()
-// let seconds = Math.trunc(milli/1000)
-// let minutes = Math.trunc(seconds/60)
-// let hour = Math.trunc(minutes/60)
-// var time = hour+":"+minutes+":"+seconds
 
-function write(at,dat,cdat){
 
-    let lili = `<li class="off">`;
+function write(at, dat, cdat) {
 
     let taf = $(
-        ` ${lili}
+        ` <li class="off">
         <span><img src="./Red check.png"></span>
         <span class="txt">${at.val()}</span>
         <span class="date">${dat}</span>
             </li>`
-        ).appendTo('ul');
+    ).appendTo('ul');
 
-        let dat_Area = $(`<span class="date">`)
+    $(taf).click(function (e) {
 
-        $(taf).click(function (e) { 
-            if(e.target == $('li')||$('span')||$('img')){
-                $(this).removeClass("off")
-                $(this).addClass("on")
-                $('img',this).attr("src", "Green check.png")
-                $('.date', this).replaceWith(`<span class="date">${cdat}</span>`);
-            }
-            console.log("clicoufunc")
-            console.log($(this))
-            console.log(e.target)
-        });
+        /*taf já está selecionando o container inteiro do Li, então usando o $(this) podemos selecionar o container(li) 
+        ou usando $('x',this) podemos especificar o que queremos dentro dele; Ex: $('u', this)
+        //a falta do $(this) causa que o jquery mude todos os elementos; Ex: $('li')*/
+        $(this).removeClass("off")
+        $(this).addClass("on")
+        $('img', this).attr("src", "Green check.png")
+        $('.date', this).replaceWith(`<span class="date">${cdat}</span>`);
 
-        
-        
+        console.log("clicoufunc")
+        console.log($(this))
+        console.log(e.target)
+    });
+
 }
-
-// $('form').click(function (e) { 
-//     
-// });
 
 console.log($('#butn'))
 
-$('form').submit(function (e) { 
-    // const li = $('ul')
+$('form').submit(function (e) {
     e.preventDefault();
-        // li.appendTo('body')
 
-        console.log(added_Date.val().split())
-        console.log(added_Date.val().split("-").reverse())
-        let new_AddDate = "[" + added_Date.val().split("-").reverse().toString().replaceAll(",", "/") + "]"
-        write(atividade,new_AddDate,current_Date)  
+    //esta vaiável esta:pegando o valor de AD; dividindo baseado no -; transformando o array em string que nos dá x,x,x; trocando o , por /
+    let new_AddDate = "[" + added_Date.val().split("-").reverse().toString().replaceAll(",", "/") + "]"
+    write(atividade, new_AddDate, current_Date)
 
-        atividade.val("")
-        added_Date.val("") 
+    atividade.val("")
+    added_Date.val("")
 });
 
-// function Stringing(func){
-//     const splitString = func.split(" ");
-//     return splitString
-//     // for(i=0; i<e;i++){
-        
-//     // }
-// }
 
