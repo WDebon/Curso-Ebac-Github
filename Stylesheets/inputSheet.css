@@ -3,7 +3,7 @@ form{
     flex-wrap: wrap;
     justify-content: center;
     margin: 10px;
-    max-width: 500px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
@@ -46,8 +46,13 @@ label{
 }
 
 #butn{
-    height: 45px;
+    height: 30px;
     border: none;
-    background-color: rgb(154, 228, 144);
+    background-color: #6eb365;
     border-radius: 2px;
+    transition: 0.2s ease;
+}
+
+#butn:hover{
+    background-color: #9ce293;
 }
