@@ -54,6 +54,7 @@ li {
     /*Box model stuff*/
     max-width: 150px;
     padding: 2px;
+    white-space: nowrap;
     /*Miscellaneous*/
     overflow-x: auto;
 }
