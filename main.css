@@ -1,9 +1,14 @@
+:root{
+    --border_color: #ababab;
+    --text_color:#ece5e5;
+}
+
 * {
 /*Box model stuff*/
     margin: 0px;
     font-family: 'Dosis', sans-serif;
-    color: #ece5e5;
-    border-bottom-color: #ece5e5;
+    color: var(--text_color);
+    border-bottom-color: var(--text_color);
 }
 
 body {
@@ -28,6 +33,7 @@ h1{
     border-width: 1px;
     border-radius: 5px 5px 0px 0px;
     border-bottom: none;
+    border-color: var(--border_color);
     padding: 5px;
     font-weight: 100;
     width: fit-content;
