@@ -16,7 +16,7 @@ input{
     padding-right: 5px;
     border: none;
     background-color: #ffffff00;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #ece5e5;
     border-radius: 2px;
     color: black;
     transition: 0.5s ease;
@@ -27,7 +27,7 @@ input:hover{
 }
 
 input::placeholder{
-    color: black;
+    color: #ece5e5;
 }
 
 .osInps{
