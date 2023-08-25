@@ -17,7 +17,7 @@ function write(at, dat, cdat) {
         <span class="txt">${at.val()}</span>
         <span class="date">${dat}</span>
             </li>`
-    ).appendTo('ul');
+    ).appendTo('.list');
 
     $(taf).click(function (e) {
 
