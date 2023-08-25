@@ -27,7 +27,7 @@ input:hover{
 }
 
 input::placeholder{
-    color: #ece5e5;
+    color: black;
 }
 
 .osInps{
@@ -54,6 +54,7 @@ label{
     border-radius: 2px;
     border-radius: 5px;
     background-color: #b2f0aae8;
+    color: black;
 /*Manipulations stuff*/
     transition: 0.2s ease;
 }
