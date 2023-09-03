@@ -6,8 +6,6 @@ const year = date.getFullYear()
 const day = date.getDate()
 const month = date.getMonth()
 var current_Date = "[" + day + "/" + month + "/" + year + "]";
-console.log(current_Date)
-
 
 function write(at, dat, cdat) {
 
@@ -28,15 +26,9 @@ function write(at, dat, cdat) {
         $(this).addClass("on")
         $('img', this).attr("src", "Green check.png")
         $('.date', this).replaceWith(`<span class="date">${cdat}</span>`);
-
-        console.log("clicoufunc")
-        console.log($(this))
-        console.log(e.target)
     });
 
 }
-
-console.log($('#butn'))
 
 $('form').submit(function (e) {
     e.preventDefault();
