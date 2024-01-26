@@ -1,0 +1,64 @@
+*{
+    color: aliceblue;
+    margin: 10px;
+    min-width: 0;
+}
+
+body{
+    background-color: black;
+    margin: 20%;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.caixa_input:hover > .eeput  {
+    background-color: rgba(170, 170, 170, 0.648);
+    transition: 300ms;
+}
+
+.caixa_input input:focus{
+    padding-left: 5px;
+    border-width: 10px;
+    outline: none;
+    transition: 200ms;
+    background-color: rgba(170, 170, 170, 0.115) !important;
+}
+
+.caixa_input input{
+    width: 100%;
+    transition: 200ms;
+    background-color: rgba(170, 170, 170, 0.115);
+    border-style: none none none solid;
+    border-color: rgb(108, 108, 108);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+.butn{
+    justify-content: right;
+}
+
+button{
+    color: black;
+    background-color: green;
+    border-style: none solid none none;
+    padding: 5px;
+    margin-right: 1px;
+    border-radius: 10px;
+}
+
+.block{
+    background-color: aliceblue;
+    width: 10px;
+    border-radius: 10px;
+    float: right;
+}
