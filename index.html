@@ -22,53 +22,54 @@
             </header>
 
             <div class="container internal_container">
+                <form>
                 <div class="container" id="inputArea">
 
                     <!-- Nome -->
                     <div class="caixa_input">
                         <label for="nome">Nome:</label>
-                        <input type="text" id="nome" class="eeput" placeholder="Lorem ipsum">
+                        <input type="text" id="nome" name="nome" class="eeput" placeholder="Lorem ipsum">
                     </div>
 
                     <!-- Email -->
                     <div class="caixa_input">
                         <label for="email">Email:</label>
-                        <input type="text" id="email" class="eeput" placeholder="xxxxxxxx@xxx.com">
+                        <input type="text" id="email" name="email" class="eeput" placeholder="xxxxxxxx@xxx.com">
                     </div>
 
                     <!-- CPF -->
                     <div class="caixa_input">
                         <label for="CPF">CPF:</label>
-                        <input type="text" id="CPF" class="eeput" placeholder="XXX.XXX.XXX-XX">
+                        <input type="text" id="CPF" name="CPF" class="eeput" placeholder="XXX.XXX.XXX-XX">
                     </div>
 
                     <!-- Telefone -->
                     <div class="caixa_input">
                         <label for="telefone">Tel:</label>
-                        <input type="text" id="telefone" class="eeput" placeholder="(XX) XXXXX-XXXX">
+                        <input type="text" id="telefone" name="relefone"  class="eeput" placeholder="(XX) XXXXX-XXXX">
                     </div>
 
                     <!-- CEP -->
                     <div class="caixa_input">
                         <label for="CEP">CEP:</label>
-                        <input type="text" id="CEP" class="eeput" placeholder="XXXXX-XXX">
+                        <input type="text" id="CEP" name="CEP" class="eeput" placeholder="XXXXX-XXX">
                     </div>
 
                     <!-- Adress -->
                     <div class="caixa_input">
                         <label for="Endereço">Endereço:</label>
-                        <input type="text" id="Endereco" class="eeput" placeholder="">
+                        <input type="text" id="Endereco" name="endereco"  class="eeput" placeholder="">
                     </div>
 
-                    <!-- Email -->
 
                 </div>
 
                 <div class="butn">
                     <div class="block"> </div>
-                    <button type="reset" class="butn"><img src="Image.png"></button>
+                    <button type="submit" class="butn"><img src="Image.png"></button>
                     <div class="block"> </div>
                 </div>
+                </form>
             </div>
         </form>
 
@@ -77,7 +78,9 @@
     <br><br><br><br><br><br><br><br><br><br>
 
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-    <script src="./main.js"></script>
+    <script src="Java/jquery.mask.min.js"></script>
+    <script src="Java/jquery.validate.min.js"></script>
+    <script src="Java/main.js"></script>
 </body>
 
 </html>

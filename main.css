@@ -57,7 +57,7 @@ header{display: flex;flex-direction: column;}
 
 button:hover{background-color: rgb(51, 114, 210) ;}
 
-button:active > img{width: 50px; transition: 150ms; transform: translateY(-100px);}
+button:active > img{width: 50px; transition: 150ms;}
 
 button{
     color: black;
