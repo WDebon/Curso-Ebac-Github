@@ -1,0 +1,45 @@
+#inputArea {
+    width: 100%;
+    margin: 0px;
+}
+
+/* fix momentária */
+@layer firstLayer {
+    .internal_container {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        width: 100% !important;
+    }
+}
+
+.caixa_input {
+    width: 50%;
+    margin: 2px;
+    width: 100%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.caixa_input:hover>.eeput {
+    background-color: rgba(101, 101, 101, 0.333);
+    transition: 300ms;
+}
+
+.caixa_input input:focus {
+    padding-left: 5px;
+    border-width: 10px;
+    outline: none;
+    transition: 200ms;
+    background-color: rgba(170, 170, 170, 0.124) !important;
+}
+
+.caixa_input input {
+    width: 100%;
+    max-width: 230px;
+    transition: 200ms;
+    margin-left: 0px;
+    background-color: rgba(170, 170, 170, 0.115);
+    border-style: none none none solid;
+    border-color: rgb(108, 108, 108);
+}

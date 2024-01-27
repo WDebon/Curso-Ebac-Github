@@ -1,0 +1,17 @@
+
+header h3{margin: 0px;}
+
+header p{margin: 0px; color: #858585;font-size: small;}
+
+header{
+    border-style: solid none ; 
+    padding: 10px;
+    border-radius: 10px; 
+    border-color: #757575ac;
+    background-color: #2222225f;
+    display: flex;
+    flex-direction: column;
+}
+
+
+

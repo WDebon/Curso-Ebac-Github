@@ -1,0 +1,19 @@
+:root {
+    --error-red: rgb(146, 69, 69);
+}
+
+/* .caixa_input input ~ .error{} || USANDO O ~ É SELECIONADO O ELEMENTO QUE VEM "DEPOIS" DO CITADO
+USANDO OUTROS MÉTODOS COMO + > |  não vai funcionar! (sla pq) */
+
+.caixa_input input~.error {
+    border-bottom: 1px dotted var(--error-red);
+}
+
+.error {
+
+    margin: 2px;
+    font-size: smaller;
+    color: var(--error-red);
+    font-style: italic;
+    border: none;
+}
