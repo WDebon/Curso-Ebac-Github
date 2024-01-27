@@ -7,7 +7,6 @@
 body{
     background-color: black;
     overflow-x: hidden;
-    max-width: 500px;
 }
 
 .container{
@@ -46,6 +45,9 @@ body{
     border-color: rgb(108, 108, 108);
 }
 
+#first_div{
+    max-width: 500px;
+}
 
 #inputArea{
     width: 100%;
