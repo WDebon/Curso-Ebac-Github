@@ -21,6 +21,7 @@ body{
     margin: 2px;
     width: 100%;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 .caixa_input:hover > .eeput  {
     background-color: rgba(101, 101, 101, 0.333);
@@ -121,3 +122,10 @@ header p{
     font-size: small;
 }
 
+.error{
+    margin: 2px;
+    font-size: smaller;
+    color: rgb(80, 42, 42);
+    font-style: italic;
+    border-bottom: 1px dotted rgb(80, 42, 42);
+}
