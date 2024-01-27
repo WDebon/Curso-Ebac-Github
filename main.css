@@ -1,3 +1,7 @@
+:root{
+    --error-red:rgb(146, 69, 69);
+}
+
 *{
     color: aliceblue;
     margin: 10px;
@@ -125,7 +129,7 @@ header p{
 .error{
     margin: 2px;
     font-size: smaller;
-    color: rgb(80, 42, 42);
+    color: var(--error-red);
     font-style: italic;
-    border-bottom: 1px dotted rgb(80, 42, 42);
+    border-bottom: 1px dotted var(--error-red);
 }
