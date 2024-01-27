@@ -23,7 +23,7 @@ body{
     margin-right: 10px;
 }
 .caixa_input:hover > .eeput  {
-    background-color: rgba(170, 170, 170, 0.648);
+    background-color: rgba(101, 101, 101, 0.333);
     transition: 300ms;
 }
 
@@ -32,7 +32,7 @@ body{
     border-width: 10px;
     outline: none;
     transition: 200ms;
-    background-color: rgba(170, 170, 170, 0.115) !important;
+    background-color: rgba(170, 170, 170, 0.124) !important;
 }
 
 .caixa_input input{
@@ -47,23 +47,17 @@ body{
 
 #first_div{
     max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#inputArea{
-    width: 100%;
-    margin: 0px;
-}
+#inputArea{width: 100%;margin: 0px;}
 
-header{
-    display: flex;
-    flex-direction: column;
-}
+header{display: flex;flex-direction: column;}
 
-button:hover{
-    background-color: rgb(51, 114, 210) ;
-}
+button:hover{background-color: rgb(51, 114, 210) ;}
 
-button:active > img{width: 50px; transition: 150ms;}
+button:active > img{width: 50px; transition: 150ms; transform: translateY(-100px);}
 
 button{
     color: black;
@@ -89,9 +83,7 @@ button{
     width: 100%;
 }
 
-#lista_meio{
-    width:700px;
-}
+#lista_meio{width:700px;}
 
 img{
     transition: 150ms;
@@ -107,7 +99,7 @@ img{
 } 
 
 .block{
-    background-color: rgba(117, 117, 117, 0.675);
+    background-color: #757575ac;
     width: 4px;
     border-radius: 5px;
     float: right;
@@ -115,5 +107,17 @@ img{
 
 header h3{margin: 0px;}
 
-header p{margin: 0px; color: rgb(133, 133, 133);}
+header{
+    border-style: solid none ; 
+    padding: 10px;
+    border-radius: 10px; 
+    border-color: #757575ac;
+    background-color: #2222225f;
+}
+
+header p{
+    margin: 0px; 
+    color: rgb(133, 133, 133);
+    font-size: small;
+}
 
