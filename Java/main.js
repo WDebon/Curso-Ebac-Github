@@ -8,23 +8,28 @@ $('#telefone').mask('(00) 00000-0000'),
 $('form').validate({
     rules:{
         nome:{
-            required: true
+            required: true,
+            minlength: 4
         },
         email:{
             required: true,
             email: true
         },
         CPF:{
-            required: true
+            required: true,
+            minlength:14
         },
         telefone:{
-            required: true
+            required: true,
+            minlength:15
         },
         CEP:{
-            required: true
+            required: true,
+            minlength:9
         },
         endereco:{
-            required: true
+            required: true,
+            minlength: 5
         }
     },
     messages:{

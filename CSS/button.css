@@ -2,7 +2,7 @@ button:hover{background-color: rgb(51, 114, 210) ;}
 
 button:active > img{width: 50px; transition: 150ms;}
 
-img{transition: 150ms cubic-bezier(); width: 50%;}
+img{transition: 150ms; width: 50%;}
 
 .butn{
     width: 100%;
