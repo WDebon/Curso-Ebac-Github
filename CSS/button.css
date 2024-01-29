@@ -32,6 +32,6 @@ button{
     align-items: center;
     writing-mode: vertical-rl;
     text-orientation: upright;
-    font-size: xx-large;
+    /* font-size: xx-large; */
     cursor: pointer;
 }
