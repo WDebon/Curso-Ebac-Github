@@ -1,0 +1,39 @@
+.containerL ul {
+    /*Box model stuff*/
+    width: fit-content;
+    margin-top: 5px;
+    padding: 0px;
+    border: 5px solid var(--cards);
+    border-radius: 0px 10px 10px 0px;
+    background-color: var(--cards);
+}
+
+#redirects li {
+    /*Display stuff*/
+    display: inline-flex;
+    /*Box model stuff*/
+    padding: 5px;
+    background-color: rgb(233, 193, 160);
+    /*Typography stuff*/
+    font-family: 'changa', sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+    /*Miscellaneous*/
+    cursor: pointer;
+}
+
+#redirects li:hover {
+    /*Box model stuff*/
+    background-color: rgb(153, 114, 63);
+}
+
+#Comb {
+    /*Box model stuff*/
+    border-radius: 0px 10px 10px 0px;
+}
+
+#redirects a {
+    /*Typography stuff*/
+    text-decoration: none;
+    color: black;
+}

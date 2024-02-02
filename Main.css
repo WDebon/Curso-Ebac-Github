@@ -1,0 +1,30 @@
+:root {
+    /*Miscellaneous*/
+    --cards: #ffebcd;
+}
+
+body {
+    /*Box model stuff*/
+    margin: 0px;
+    margin-top: 5px;
+    background-color: #d6b386;
+    /*Miscellaneous*/
+    overflow-x: hidden;
+}
+
+.container {
+    /*Display stuff*/
+    display: inline-flex;
+    justify-content: space-between;
+    /*Box model stuff*/
+    width: 100vw;
+}
+
+hr {
+    /*Box model stuff*/
+    margin: 5px;
+    border: 2px solid rgba(92, 12, 32, 0.699);
+    border-radius: 10px;
+    width: 90%;
+    align-self: center;
+}

@@ -1,0 +1,32 @@
+.comb article{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.comb h3{
+    margin-top: 14px;
+    margin-bottom: 0px;
+    font-size: 1.5vw;
+    font-family: 'Caveat', cursive;
+    background-color: rgba(216, 173, 123, 0.432);
+    border-radius: 50px 50px 0px 0px;
+}
+.comb article nav{
+    /*Box model stuff*/
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-right: 5px;
+    background-color: rgba(219, 153, 52, 0.171);
+}
+
+.comb img{
+    max-width: 20vw;
+    max-height: 20vw;
+}
+
+.comb article p{
+    border-radius: 0px 0px 10px 10px;
+}

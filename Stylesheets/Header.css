@@ -1,0 +1,65 @@
+.containerL img {
+    /*Box model stuff*/
+    width: 150px;
+    /*Miscellaneous*/
+    cursor: pointer;
+}
+
+header #logos img {
+    /*Box model stuff*/
+    width: 50px;
+    /*Miscellaneous*/
+    cursor: pointer;
+}
+
+header #logos img:hover {
+    /*Manipulations stuff*/
+    filter: saturate(3);
+}
+
+header ul#logos {
+    /*Positioning stuff*/
+    position: sticky;
+    top: 0;
+    /*Box model stuff*/
+    width: 230px;
+    margin: 0px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 10px 0px 0px 100px;
+    background-color: var(--cards);
+    /*Miscellaneous*/
+    /* mantem o negócio em cima */
+}
+
+.containerL div {
+    /*Display stuff*/
+    display: flex;
+    flex-direction: column;
+    /*Positioning stuff*/
+    position: sticky;
+    top: 0;
+}
+
+header h1 {
+    /*Display stuff*/
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+    /*Box model stuff*/
+    width: 325px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border-radius: 0px 10px 80px 0px;
+    background-color: var(--cards);
+    /*Typography stuff*/
+    font-family: 'Lilita One', cursive;
+    font-weight: 100;
+    text-align: center;
+    color: rgb(92, 45, 45);
+}
+
+h1 p {
+    /*Box model stuff*/
+    margin-right: 30px;
+}

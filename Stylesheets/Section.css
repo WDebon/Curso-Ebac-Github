@@ -1,0 +1,45 @@
+section>.container {
+    /*Display stuff*/
+    display: inline-block;
+    /*Box model stuff*/
+    width: 40vw;
+    margin: 10px;
+    border: 10px solid var(--cards);
+    border-radius: 10px;
+    background-color: var(--cards);
+}
+
+.middle h2 {
+    /*Box model stuff*/
+    margin: 4px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(226, 197, 161);
+    /*Typography stuff*/
+    font-family: 'lilita one', cursive;
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+
+.container>p,
+.cardap p,
+.comb p {
+    /*Box model stuff*/
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(209, 128, 62);
+    /*Typography stuff*/
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+.middle {
+    /*Display stuff*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /*Miscellaneous*/
+    /* controls the middle section */
+}
