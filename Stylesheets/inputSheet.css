@@ -1,0 +1,102 @@
+.rectangle {
+    transform: scaleX(2);
+    padding-left: 100px;
+    position: relative;
+    left: 13%;
+    z-index: -1;
+}
+
+.red {
+    color: rgb(241, 84, 84);
+}
+
+.som-num {
+    background-color: #d44343ad;
+    border-color: #fccbcb;
+    border-style: inset;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.rectangle,
+.desc,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb{
+    border-style: inset;
+    border-width: 1px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.103);
+}
+
+.div-forma {
+    /* padding: 10px; */
+    /* border-radius: 10px; */
+    /* background-color: #7069691c; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.name-input {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.name-input input,
+.name-input textarea,
+.name-input button {
+    border: none;
+    outline: none;
+}
+
+form hr {
+    padding: 2px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.container>hr {
+    margin: 5px;
+}
+
+button {
+    border-style: inset;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    width: 50px;
+    margin-right: 0px;
+    margin-left: 0px;
+    border: 1px inset rgba(0, 128, 0, 0.185);
+    /* cursor: pointer; */
+    background-color: rgb(143, 218, 149);
+    font-size: 50px;
+    color: white;
+    border-radius: 5px;
+}
+
+button:active{
+    background-color: rgb(100, 153, 105);
+}
+
+#desc {
+    resize: none;
+    width: max-content;
+    padding: 10px;
+    border: 5px solid white;
+}
+
+#nome,
+#tel,
+#desc,
+#tag {
+    border-radius: 0px 0px 5px 5px;
+}
+
+#nome,
+#tel {
+    border: 3px solid white;
+    height: 30px;
+    padding-left: 10px;
+}

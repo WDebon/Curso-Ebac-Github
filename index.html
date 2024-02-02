@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telefones</title>
+
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./Stylesheets/inputSheet.css">
+    <link rel="stylesheet" href="./Stylesheets/listSheet.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Lista telefônica</h1>
+        </header>
+        <hr>
+
+        <!-- Lista -->
+        <div class="div-forma">
+
+            <!-- Os inputs -->
+            <form id="submit-form">
+
+                <!-- Nome -->
+                <div class="name-input">
+                    <label for="nome">Nome:<span class="red">*</span></label>
+                    <hr>
+                    <input type="text" placeholder="Nome" id="nome" required>
+                </div>
+
+                <!-- Telefone -->
+                <div class="name-input">
+                    <label for="tel">Telefone:<span class="red">*</span></label>
+                    <hr>
+                    <input type="tel" placeholder="XXXXXXXXXXXX" id="tel" required>
+                    <p class="som-num" id="onlyNumbers">Somente números ! ! </p>
+                </div>
+
+                <!-- Tag -->
+                <div class="name-input">
+                    <label for="tag">Tag:</label>
+                    <hr>
+                    <input type="color" name="tag" id="tag" required>
+                </div>
+
+                <!-- Descrição -->
+                <div class="name-input">
+                    <label for="desc">Info. Adicional:</label>
+                    <hr>
+                    <textarea name="Descrição" id="desc" cols="45" rows="5"></textarea>
+                </div>
+
+            </form>
+
+            <!-- Retangulo atras do botâo -->
+            <div class="rectangle"></div>
+
+            <!-- Botão -->
+            <button type="submit" form="submit-form" id="botn">+</button>
+        </div>
+
+        <hr>
+
+        <table>
+            <thead>
+                <th>Tag</th>
+                <th>Nome</th>
+                <th>Telefone</th>
+            </thead>
+            <tbody style="max-height: 20px">
+            </tbody>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+    <br><br><br><br><br><br>
+    
+</body>
+
+</html>
