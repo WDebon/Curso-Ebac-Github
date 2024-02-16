@@ -4,9 +4,17 @@
     border-radius: 10px;
 }
 
+ul > img{
+    width: 10px;
+}
+
 img{
-    width: 100px;
+    width: 100%;
     border-radius: 0;
+}
+
+button > img{
+    width: 10%;
 }
 
 body{
@@ -26,16 +34,48 @@ header{
 }
 #about-me{
     background-color: antiquewhite;
+    display: grid;
+}
+
+#about-me > img{
+
+}
+#tex{
+    
 }
 
 #produtos{
     background-color: #67bb68;
 }
 
-.card{
-    background-color: rgb(189, 146, 188);
+#card-storage{
+    background-color: antiquewhite;
+    display: grid;
 }
 
+.card{
+    background-color: rgb(189, 146, 188);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#left{
+    margin-bottom: 2%;
+}
+
+#left, #righ{
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    column-gap: 2%;
+    width: 100%;
+}
+
+.grid{
+    display: grid;
+    row-gap: 10px;
+}
 
 
 
