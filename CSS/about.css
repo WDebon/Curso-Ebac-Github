@@ -1,0 +1,23 @@
+#about-me{
+    margin-bottom: 2%;
+    width: 100%;
+    background-color: antiquewhite;
+    gap: 2%;
+    display: flex;
+}
+
+#about-me h3{
+    
+    border-bottom: black solid;
+}
+
+#tex{
+    width: 100%;
+    float: left;
+}
+
+#about-me > img{
+    width: 50%;
+    height: fit-content;
+}
+

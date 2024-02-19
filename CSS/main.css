@@ -14,28 +14,6 @@ ul{
     margin: 0;
 }
 
-img{
-    width: 100%;
-    border-radius: 0;
-}
-
-.card > p{
-    text-wrap:wrap;
-    margin-top: 0px;
-}
-
-.card > hr{
-    border-color: black;
-    width: 100%;
-    /* float: left; */
-    margin: 0;
-}
-
-button > img{
-    width: 10%;
-    padding: 3px;
-}
-
 #produtos{
     border-bottom: black solid;
 }
@@ -46,6 +24,7 @@ body{
     margin: 0;
     align-items: center;
 }
+
 .container{
     width: 60%;
     margin-top: 0px;
@@ -53,85 +32,9 @@ body{
     justify-content: space-between;
 }
 
-header{
-    margin-bottom: 2%;
-    background-color: aquamarine;
-    background-size: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 1%
-}
-
-header h1{
-    margin: 0;
-    width: fit-content;
-}
-
-#about-me{
-    margin-bottom: 2%;
-    width: 100%;
-    background-color: antiquewhite;
-    gap: 2%;
-    display: flex;
-}
-
-#about-me h3{
-    
-    border-bottom: black solid;
-}
-
-#tex{
-    width: 100%;
-}
-
-#about-me > img{
-    width: 50%;
-    height: fit-content;
-}
-
-/* #about-me > img{
-    width: 50%;
-} */
-#tex{
-    float: left;
-}
-
 #produtos{
     background-color: #67bb68;
 }
-
-#card-storage{
-    background-color: antiquewhite;
-    display: grid;
-    grid-template-columns: repeat(4, 23.3%);
-    column-gap: 2%;
-}
-
-.card{
-    background-color: rgb(189, 146, 188);
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    padding: 5px;
-}
-
-.card h3{
-    margin: 1%;
-}
-
-.card > button{
-    border: none;
-}
-
-/* #left, #righ{
-    display: grid;
-    grid-template-columns: repeat(3, 31.568%);
-    column-gap: 2%;
-    width: 100%;
-} */
 
 .grid{
     display: grid;
