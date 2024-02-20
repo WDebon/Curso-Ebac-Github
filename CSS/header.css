@@ -1,3 +1,7 @@
+:root{
+    --transparent-black: rgba(0, 0, 0, 0.402);
+}
+
 header{
     margin-bottom: 2%;
     background-color: aquamarine;
@@ -10,9 +14,13 @@ header{
 
 h1{
     font-weight:500;
+    --border-witdth:3px;
+    border-left: var(--border-witdth) solid var(--transparent-black);
+    padding-left: 5px;
 }
 
 header hr{
+    border-color: var(--transparent-black);
     align-self: center;
     width:100%;
     height: 0%;
@@ -42,7 +50,6 @@ ul > img{
 ul{
     align-self: center;
     display: flex;
-    height: auto;
     padding: 0;
     margin: 0;
     background-color: rgba(0, 0, 0, 0.133);

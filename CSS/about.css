@@ -11,12 +11,22 @@
 }
 
 #tex{
+    overflow: auto;
+    height: auto;
+    padding-right: 1%;
     width: 100%;
     float: left;
 }
 
 #about-me > img{
     width: 50%;
-    height: fit-content;
+}
+
+@media screen and (max-width: 1236px) {
+    #tex{
+        overflow-y: auto;
+        height: 200px;
+    }
+    
 }
 
