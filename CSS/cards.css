@@ -15,13 +15,13 @@ button > img{
 }
 
 .card{
-    background-color: rgb(189, 146, 188);
+    /* background-color: rgb(189, 146, 188); */
     width: 100%;
     height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    padding: 5px;
+    /* padding: 5px; */
 }
 
 .card h3{
@@ -29,12 +29,39 @@ button > img{
 }
 
 .card > button{
+    background-color: rgb(153, 215, 169);
     border: none;
+    box-shadow: 1px 1px 5px green;
 }
 
 #card-storage{
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     display: grid;
     grid-template-columns: repeat(4, 23.3%);
     column-gap: 2%;
+}
+
+@media screen and (max-width:1023px) {
+    .card{
+        --numer: 20px;
+        margin-bottom: var(--numer);
+        padding-bottom: var(--numer);
+        border-bottom: dotted black;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1023px) {
+    #card-storage{
+        grid-template-columns: repeat(2,48%);
+        column-gap: 2.5%;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    #card-storage{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 }

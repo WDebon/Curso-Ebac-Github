@@ -8,7 +8,12 @@ img{
     border-radius: 0;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 body{
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -16,17 +21,17 @@ body{
 }
 
 .container{
-    width: 60%;
+    width: 75%;
     margin-top: 0px;
     display: flex;
     justify-content: space-between;
 }
 
 #produtos{
-    background-color: #67bb68;
-    border-bottom: black solid;
+    /* background-color: #67bb68; */
+    border-bottom: black 2px solid;
     padding: 1%;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .grid{
@@ -34,6 +39,14 @@ body{
     row-gap: 10px;
 }
 
+@media screen and (max-width: 764px) {
+    .container{
+        width: 90%;
+    }
+    html::-webkit-scrollbar{
+        display: none;
+    }
+}
 
 
 
