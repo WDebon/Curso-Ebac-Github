@@ -15,9 +15,11 @@
     background-color: rgba(35, 34, 32, 0.063);
 }
 
+@media screen and (min-width: 1023px){
 button:hover img {
     transition: 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
     width: 11%;
+}
 }
 
 button>img {
