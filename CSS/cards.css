@@ -1,11 +1,32 @@
+:root{
+    --fives:5px;
+}
+
+.card >p,
+.card h3{
+    padding: var(--fives) 0px var(--fives) 0;
+    border-radius: 2px;
+}
 .card > p{
+    width: 100%;
     text-wrap:wrap;
     margin-top: 0px;
+    background-color: rgba(35, 34, 32, 0.063);
+}
+
+button:hover img{
+    transition: 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    width: 11%;
 }
 
 button > img{
+    transition: 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
     width: 10%;
     padding: 3px;
+}
+
+.card > img{
+    width: 100%;
 }
 
 .card > hr{
@@ -25,19 +46,22 @@ button > img{
 }
 
 .card h3{
-    margin: 1%;
+    width: 100%;
+    margin: 1% 0 1% 0;
+    background-color: rgba(35, 34, 32, 0.063);
 }
 
 .card > button{
     background-color: rgb(153, 215, 169);
     border: none;
     box-shadow: 1px 1px 5px green;
+    cursor: pointer;
 }
 
 #card-storage{
     /* background-color: antiquewhite; */
     display: grid;
-    grid-template-columns: repeat(4, 23.3%);
+    grid-template-columns: repeat(4, 23.5%);
     column-gap: 2%;
 }
 
@@ -52,7 +76,7 @@ button > img{
 
 @media screen and (min-width: 701px) and (max-width: 1023px) {
     #card-storage{
-        grid-template-columns: repeat(2,48%);
+        grid-template-columns: repeat(2,48.8%);
         column-gap: 2.5%;
     }
     
