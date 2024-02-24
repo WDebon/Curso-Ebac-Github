@@ -17,7 +17,7 @@
     <div class="container w-50 bg-secondary bg-gradient position-absolute top-50 start-50 translate-middle border border-5 border-secondary rounded">
         <div class=" p-3 text-center">
             
-            <div class="container bs5 bg-gradient">
+            <div class="container bs5">
                 <h1 class="display-1 text-dark">Bem vindo!</h1>
             </div>
 
@@ -25,20 +25,26 @@
             
             <button class="p-2 btn w-75 btn-primary" aria-expanded="false" aria-controls="collapse" data-toggle="collapse" data-target="#collapse"><span class="fs-4">Continuar</span></button>
         </div>
-        <div class="collapse" id="#collapse">
-            <hr>
-            <h4 class="">Insira as informações:</h4>
-            <form class="col">
-                <div class="col mb-3">
-                    <label for="name" class="form-label">Nome:</label>
-                    <input class="form-control" id="name" type="name" placeholder="Xxxxx xxxxxx"></div>
+        <div class="p-3 pt-0 collapse" id="#collapse">
+            <hr class="mt-0">
+            <h4 class="mb-4">Insira as informações:</h4>
+            <form class="col validation">
                 <div class="mb-3">
-                    <label for="email" class="form-label">Email:</label>
-                    <input class="form-control" id="email" type="email" placeholder="xxxxx@gmail.com"></div>
+                    <label for="name" class="form-label">Nome:</label>
+                    <input class="form-control" id="name" type="name" placeholder="Xxxxx xxxxxx" required></div>
+                <div class="mb-3">
+                    <label for="email" class="form-label aria-label="Username" aria-describedby="basic-addon1"">Email:</label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <input class="form-control" id="email" type="email" placeholder="xxxxx@gmail.com" required></div>
+                    </div>
                 <div class="mb-3">
                     <label for="tel" class="form-label">Telefone:</label>
-                    <input class="form-control" id="tel" type="tel" placeholder="(XX) XXXX-XXXX"></div>
-                <button id="btn-submit" class="btn" type="submit">Enviar</button>
+                    <div class="input-group">
+                        <span class="input-group-text" id="fone">📱</span>
+                        <input class="form-control" id="tel" type="tel" placeholder="(XX) XXXX-XXXX" aria-label="Username" aria-describedby="fone" required></div>
+                    </div>
+                <button id="btn-submit" class="btn btn-primary container-fluid" type="submit">Enviar</button>
             </form>
         </div>
     </div>
