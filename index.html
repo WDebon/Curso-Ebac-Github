@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 </head>
 
@@ -93,13 +94,20 @@ https://picsum.photos
                 <div class="h1 ms-2 mt-2 rounded-top">Patrocinadores</div>
                 <hr>
                 <div class="row justify-content-center container">
-                    <div class="col-lg-1 col-md-3 col-sm-4 col-6 "><img width="200" src="logo-placeholder-image.png"></div>
-                    <div class="col-lg-1 col-md-3 col-sm-4 col-6 "><img width="200" src="logo-placeholder-image.png"></div>
-                    <div class="col-lg-1 col-md-3 col-sm-4 col-6 "><img width="200" src="logo-placeholder-image.png"></div>
-                    <div class="col-lg-1 col-md-3 col-sm-4 col-6 "><img width="200" src="logo-placeholder-image.png"></div>
-                    <div class="col-lg-1 col-md-3 col-sm-4 col-6 "><img width="200" src="logo-placeholder-image.png"></div>
-                    <div class="col-lg-1 col-md-3 col-sm-4 col-6 "><img width="200" src="logo-placeholder-image.png"></div>
-                    <div class="col-lg-1 col-md-3 col-sm-4 col-6 "><img width="200" src="logo-placeholder-image.png"></div>
+                    <div class="col-lg-1 col-md-3 col-sm-4 col-6 "><img width="200" src="logo-placeholder-image.png">
+                    </div>
+                    <div class="col-lg-1 col-md-3 col-sm-4 col-6 "><img width="200" src="logo-placeholder-image.png">
+                    </div>
+                    <div class="col-lg-1 col-md-3 col-sm-4 col-6 "><img width="200" src="logo-placeholder-image.png">
+                    </div>
+                    <div class="col-lg-1 col-md-3 col-sm-4 col-6 "><img width="200" src="logo-placeholder-image.png">
+                    </div>
+                    <div class="col-lg-1 col-md-3 col-sm-4 col-6 "><img width="200" src="logo-placeholder-image.png">
+                    </div>
+                    <div class="col-lg-1 col-md-3 col-sm-4 col-6 "><img width="200" src="logo-placeholder-image.png">
+                    </div>
+                    <div class="col-lg-1 col-md-3 col-sm-4 col-6 "><img width="200" src="logo-placeholder-image.png">
+                    </div>
                 </div>
             </div>
             <hr>
@@ -157,8 +165,87 @@ https://picsum.photos
             </div>
         </div>
 
-        <div id="informa">
-            
+        <div class="row p-0" id="informa">
+            <div class="col" id="sociais">
+                <hr>
+                <div class="row">
+                    <div class="border border-1 rounded p-3">
+                        <div class="row ">
+                            <ul class="pe-2 ps-2 list-group list-group-horizontal align-items-center">
+                                <li class="w-100 d-inline me-2">
+                                    <hr>
+                                </li>
+                                <li class="me-2 fs-1 d-inline"><a><i class="bi bi-instagram"></i></a></li>
+                                <li class="w-100 d-inline me-2">
+                                    <hr>
+                                </li>
+                                <li class="me-2 fs-1 d-inline"><a><i class="bi bi-facebook"></i></a></li>
+                                <li class="w-100 d-inline me-2">
+                                    <hr>
+                                </li>
+                                <li class="me-2 fs-1 d-inline"><a><i class="bi bi-whatsapp"></i></a></li>
+                                <li class="w-100 d-inline me-2">
+                                    <hr>
+                                </li>
+                                <li class="me-2 fs-1 d-inline"><a><i class="bi bi-twitter"></i></a></li>
+                                <li class="w-100 d-inline">
+                                    <hr>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                </div>
+            </div>
+
+            <div class="col">
+                <hr class="w-100">
+                <div class="p-3 pt-0 border border-1 rounded pt-3">
+                    <h4 class="mb-4 section-title">Insira as informações:</h4>
+                    <hr>
+                    <form class="validation">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nome:</label>
+                            <div class="input-group">
+                                <span class="input-group-text" id="fone">🏠</span>
+                                <input class="form-control" id="name" type="name" placeholder="Xxxxx xxxxxx" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label for="email" class="form-label aria-label=" Username" aria-describedby="basic-addon1"">Email:</label>
+                            <div class=" input-group">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                                <input class="form-control" id="email" type="email" placeholder="xxxxx@gmail.com" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="tel" class="form-label">Telefone:</label>
+                            <div class="input-group">
+                                <span class="input-group-text" id="fone">📱</span>
+                                <input class="form-control" id="tel" type="tel" placeholder="(XX) XXXX-XXXX"
+                                    aria-label="Username" aria-describedby="fone" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="cep" class="form-label">CEP:</label>
+                            <div class="input-group">
+                                <span class="input-group-text" id="fone">🏠</span>
+                                <input class="form-control" id="cep" type="cep" placeholder="XXXXX-XXX"
+                                    aria-label="Username" aria-describedby="fone" required>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary container-fluid" type="submit">Enviar</button>
+
+                    </form>
+                </div>
+                </ class="col">
+            </div>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
