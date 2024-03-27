@@ -12,6 +12,11 @@
     cursor: default;
 }
 
+.btn-primary{
+    background-color: rgb(153, 109, 196);
+    border-color: rgba(53, 44, 61, 0.5);
+}
+
 /* Lembrar de olhar no devtools pra pegar os bagulho */
 .nav-underline{
     --bs-nav-underline-link-active-color: rgb(0, 0, 0);
