@@ -2,9 +2,9 @@
 *{
     font-family: "Inter", sans-serif;
     --bs-border-color:rgba(58, 72, 74, 0.437);
-    --bs-body-bg:rgb(176, 180, 200);
+    --bs-body-bg:rgb(65, 54, 76);
     --bs-light-rgb:237, 240, 245;
-    --bs-primary-rgb: 64, 92, 233;
+    --bs-primary-rgb: 153, 109, 196;
     /* border-color: chocolate; */
 }
 
@@ -17,7 +17,7 @@
     --bs-nav-underline-link-active-color: rgb(0, 0, 0);
 }
 
-li.nav-item{
+.nav-item{
     --bs-nav-link-color: grey;
     --bs-nav-link-hover-color: rgb(57, 57, 57);
 }
@@ -26,6 +26,22 @@ li.nav-item{
 h1, h2, h3,h4 ,h5 ,
 .h1 ,.h2 ,.h3, .h4{
     font-family: "Tauri", sans-serif;
+}
+
+.form-control{
+    background-color: rgb(157, 132, 189);
+}
+
+.nav-link{
+    color: blueviolet;
+}
+
+hr{
+    border-color: rgba(72, 0, 63, 0.541);
+}
+
+.nav-link:hover{
+    color: rgba(37, 13, 59, 0.541);
 }
 
 .purp{
