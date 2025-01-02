@@ -1,0 +1,29 @@
+$var1: blue;
+$var2: yellow;
+
+@mixin trans1{
+  transition: 1000ms ease-in-out;
+}
+
+body {
+  background-color: rgb(93, 150, 88);
+} 
+
+.box{
+
+  background-color: $var2;
+  width: 50px; height: 100px;
+  @include trans1;
+
+  p{@include trans1;}
+
+  &:hover{
+    background-color: $var1;
+    @include trans1;
+
+    p{
+      color: aliceblue; 
+      @include trans1;
+    }
+  }
+}

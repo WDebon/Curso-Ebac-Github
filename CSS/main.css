@@ -1,0 +1,23 @@
+body {
+  background-color: rgb(93, 150, 88);
+}
+
+.box {
+  background-color: yellow;
+  width: 50px;
+  height: 100px;
+  transition: 1000ms ease-in-out;
+}
+.box p {
+  transition: 1000ms ease-in-out;
+}
+.box:hover {
+  background-color: blue;
+  transition: 1000ms ease-in-out;
+}
+.box:hover p {
+  color: aliceblue;
+  transition: 1000ms ease-in-out;
+}
+
+/*# sourceMappingURL=main.css.map */
