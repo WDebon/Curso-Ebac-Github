@@ -1,8 +1,17 @@
-$var1: blue;
-$var2: yellow;
+@use 'settings/reset.scss';
+@use 'settings/vars.scss';
+@use 'sass:math';
 
-@mixin trans1{
-  transition: 1000ms ease-in-out;
+@function pxToem($pxTarget, $pxContext: 16px){
+  @return math.div($pxTarget,$pxContext)+em;
+}
+
+@mixin trans1($time:1000ms){
+  transition: $time ease-in-out;
+  -webkit-transition: $time ease-in-out;
+  -moz-transition: $time ease-in-out;
+  -ms-transition: $time ease-in-out;
+  -o-transition: $time ease-in-out;
 }
 
 body {
@@ -11,19 +20,25 @@ body {
 
 .box{
 
-  background-color: $var1;
-  width: 50px; height: 100px;
-  @include trans1;
+  background-color: vars.$var2;
+  width: fit-content; height: 100px;
+  @include trans1(500ms);
 
-  p{@include trans1;}
+  p{@include trans1; color:vars.$var3;font-size: pxToem(30px);}
 
   &:hover{
-    background-color: $var1;
+    background-color: vars.$var1;
     @include trans1;
 
     p{
-      color: aliceblue; 
+      color: lighten( vars.$var3,95%); 
       @include trans1;
     }
   }
+}
+
+@media screen and (max-width: vars.$mobile) {
+  body{
+    background-color: white;
+  }  
 }
