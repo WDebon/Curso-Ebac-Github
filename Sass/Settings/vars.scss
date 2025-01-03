@@ -1,6 +1,8 @@
-$var1: blue;
-$var2: yellow;
-$var3: black;
+@mixin w100{
+    width: 100%;
+}
 
-$mobile:740px;
-$desktop:1040px;
+$desktop: 1024px;
+$mobile: 767px;
+
+$green:#44bd32;

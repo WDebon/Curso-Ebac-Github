@@ -1,44 +1,99 @@
-@use 'settings/reset.scss';
-@use 'settings/vars.scss';
-@use 'sass:math';
-
-@function pxToem($pxTarget, $pxContext: 16px){
-  @return math.div($pxTarget,$pxContext)+em;
-}
-
-@mixin trans1($time:1000ms){
-  transition: $time ease-in-out;
-  -webkit-transition: $time ease-in-out;
-  -moz-transition: $time ease-in-out;
-  -ms-transition: $time ease-in-out;
-  -o-transition: $time ease-in-out;
-}
+@use "Settings/base.scss";
+@use "Settings/vars.scss";
 
 body {
-  background-color: rgb(93, 150, 88);
-} 
+  background-color: #f5f6fa;
 
-.box{
+  header {
+    background-color: #182c61;
+    position: sticky;
+    top: 0;
+    left: 0;
 
-  background-color: vars.$var2;
-  width: fit-content; height: 100px;
-  @include trans1(500ms);
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0;
+    }
+  }
 
-  p{@include trans1; color:vars.$var3;font-size: pxToem(30px);}
+  section {
+    padding: 56px 0;
+  }
 
-  &:hover{
-    background-color: vars.$var1;
-    @include trans1;
+  li {
+    list-style: none;
+  }
 
-    p{
-      color: lighten( vars.$var3,95%); 
-      @include trans1;
+  .container {
+    max-width: vars.$desktop;
+    @include vars.w100;
+    margin: 0 auto;
+  }
+
+  .products {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 32.66%);
+    column-gap: 1%;
+    row-gap: 4%;
+    @include vars.w100;
+
+    img {
+      @include vars.w100;
+      border-radius: 16px;
+    }
+  }
+
+  .product-button {
+    display: block;
+    background-color: vars.$green;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 8px;
+    margin-top: 8px;
+    text-decoration: none;
+
+    &:hover {
+      background-color: vars.$green;
+    }
+  }
+
+  .menu {
+    display: flex;
+
+    li {
+      font-weight: bold;
+      margin-left: 24px;
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
     }
   }
 }
 
+@media screen and (max-width: vars.$desktop) {
+  .container {
+    max-width: 80% !important;
+ 
+    .products {
+      // background-color: blue;
+      grid-template-columns: repeat(2 , 48.5%);
+      column-gap: 3%;
+    } 
+  }
+}
+
 @media screen and (max-width: vars.$mobile) {
-  body{
-    background-color: white;
-  }  
+  .products {
+    // background-color: red;
+    display: block;
+  }
+
+  .product-item {
+    margin-bottom: 32px;
+  }
 }
