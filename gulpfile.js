@@ -34,26 +34,3 @@ exports.default = function(){ //npm run gulp watch
     gulp.watch('./source/scripts/*.js', {ignoreInitial:false} ,gulp.series(compileJs)); //vai dar um constante watch no sass
     gulp.watch('./source/imgs/*', {ignoreInitial:false} ,gulp.series(compileimages)); //vai dar um constante watch no sass
 }
-
-// function defaultFunc(cb){
-//     console.log("|||Executing Gulp|||");
-//     cb();
-// }
-
-// function sayHi(cb){ //Tarefa publica pois é exportada
-//     console.log("||Hello!||");
-//     sayBye();
-//     cb();
-// }
-
-// function sayBye(){ //Tarefa privada
-//     console.log("||Goodbye||");
-// };
-
-// exports.sass = compileSass;
-// exports.javascript = compileJs;
-// exports.images = compileimages;
-// exports.default = defaultFunc; //npm run gulp
-// exports.teste1 = gulp.parallel(defaultFunc,sayHi)
-// exports.teste2 = gulp.series(defaultFunc,sayHi)
-// exports.teste3 = sayHi; //npm run gulp teste3
