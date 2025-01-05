@@ -1,0 +1,62 @@
+@import "vars.less";
+@bpmobile: ~"(max-width:767px)";
+@bptablet: ~"(max-width:1023px)"; //ou (min-width:768px) and (max-width:1023px)
+
+.marginBottom8px{
+    margin-bottom: 8px;
+}
+
+.smallFont{
+    font-size: 14px;
+}
+
+body{
+    background-color: @bgColor;
+    color: @txtColor;
+    // a{
+    //     background-color: @btnColor;
+    // }
+}
+
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    @media @bptablet{ //Deixar em cima do mobile por causa da ordem de comandos
+        max-width: 80%;
+    }
+    
+    @media @bpmobile{
+        max-width: 70%;
+    }
+}
+
+header{
+    padding: 24px;
+
+    .pf-avatar{
+        display: block;
+        margin: 0 auto 24px;
+        border-radius: 50%;
+
+    }
+}
+
+.pf-bio{
+    text-align: center;
+
+    &-name{
+        font-size: 16px;
+        .marginBottom8px();
+    }
+    &-sub{
+        .smallFont;
+        .marginBottom8px();
+    }
+    &-des{
+        .smallFont;
+        opacity: .7;
+    }
+}
