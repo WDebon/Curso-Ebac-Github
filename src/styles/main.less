@@ -6,15 +6,19 @@
 @bptablet: ~"(max-width:1023px)"; //ou (min-width:768px) and (max-width:1023px)
 
 body{
-    background-color: @bgColor;
-    color: @txtColor;
+    background-color: #colors[bgColor]; //ou @bgColor para usar com variáveis
+    color: #colors[txtColor];
 }
 
 .container{
-    max-width: 960px;
     .width100;
     .marginMiddle;
+    max-width: 960px;
+    height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
     @media @bptablet{ //Deixar em cima do mobile por causa da ordem de comandos
         max-width: 80%;
@@ -26,7 +30,7 @@ body{
 }
 
 header{
-    padding: 24px;
+    padding-bottom: 24px;
     text-align: center;
 
     .pf-avatar{
@@ -56,20 +60,44 @@ header{
 }
 
 .social-links{
+    .width100;
+    .marginMiddle;
+    .paddingLeft0;
     display: flex;
     justify-content: space-between;
     max-width: 240px;
-    .width100;
-    .marginMiddle;
-
+    
     li{
-        list-style: none;
+        .listStyle;
         img{
             &:hover{
                 transform: scale(1.2);
                 .hoverTransition;
             }
             .hoverTransition
+        }
+    }
+}
+
+.project-list{
+    .paddingLeft0;
+    .listStyle;
+    &-item{
+        &-button{
+            .hoverTransition;
+            text-decoration: none;
+            background-color: #colors[btnColor];
+            display: block;
+            padding: 16px 20px;
+            margin-bottom: 16px;
+            border-radius: 20px;
+            text-align: center;
+            color: #colors[txtColor];
+            border: 2px solid @btnColor;
+            &:hover{
+                .hoverTransition;
+                background-color: transparent;
+            }
         }
     }
 }
