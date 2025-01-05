@@ -1,14 +1,9 @@
 @import "vars.less";
+@import "maps.less";
+@import "mixins.less";
+
 @bpmobile: ~"(max-width:767px)";
 @bptablet: ~"(max-width:1023px)"; //ou (min-width:768px) and (max-width:1023px)
-
-.marginBottom8px{
-    margin-bottom: 8px;
-}
-
-.smallFont{
-    font-size: 14px;
-}
 
 body{
     background-color: @bgColor;
@@ -17,8 +12,8 @@ body{
 
 .container{
     max-width: 960px;
-    width: 100%;
-    margin: 0 auto;
+    .width100;
+    .marginMiddle;
     font-family: Arial, Helvetica, sans-serif;
     
     @media @bptablet{ //Deixar em cima do mobile por causa da ordem de comandos
@@ -32,19 +27,18 @@ body{
 
 header{
     padding: 24px;
+    text-align: center;
 
     .pf-avatar{
         display: block;
         margin: 0 auto 24px;
         border-radius: 50%;
-
     }
 }
 
 
 .pf-bio{
     text-align: center;
-
     &-name{
         font-size: 16px;
         .marginBottom8px();
@@ -55,14 +49,27 @@ header{
     }
     &-des{
         .smallFont;
-        opacity: .7;
+        .marginMiddle;
+        opacity: .6;
+        max-width: 800px;
     }
 }
 
 .social-links{
     display: flex;
     justify-content: space-between;
+    max-width: 240px;
+    .width100;
+    .marginMiddle;
+
     li{
         list-style: none;
+        img{
+            &:hover{
+                transform: scale(1.2);
+                .hoverTransition;
+            }
+            .hoverTransition
+        }
     }
 }
