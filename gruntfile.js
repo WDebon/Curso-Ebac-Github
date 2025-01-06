@@ -32,7 +32,7 @@ module.exports = function(grunt){
         },
 
         replace:{
-            dev:{ //Trocando o .css do HTML para o .css normal "main.css" criado no styles
+            dev:{ //Trocando o .js e .css do HTML para o .js e .css normal "main" criado
                 options:{
                     patterns:[
                         {
@@ -60,6 +60,10 @@ module.exports = function(grunt){
                         {
                             match: 'css_Dest',
                             replacement: './styles/main.min.css'
+                        },
+                        {
+                            match: 'js_Dest', //usar @@ no script em vez do path
+                            replacement: './scripts/main.min.js'
                         }
                     ]
                 },
@@ -86,6 +90,14 @@ module.exports = function(grunt){
             }
         },
 
+        uglify:{
+            target:{
+                files:{
+                    './dist/scripts/main.min.js': './src/scripts/main.js'
+                },
+            }
+        }
+
         clean:['prebuild'] //deletando o prebuild
     })
 
@@ -93,8 +105,8 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-replace');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
-    grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
 
     grunt.registerTask('default', ['watch'])
-    grunt.registerTask('build', ['less:production','htmlmin:dist','replace:dist','clean'])
+    grunt.registerTask('build', ['less:production','htmlmin:dist','replace:dist','clean','uglify'])
 }
