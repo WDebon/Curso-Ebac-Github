@@ -99,12 +99,14 @@ module.exports = function(grunt){
         },
 
         clean:['prebuild'] //deletando o prebuild
+
     })
 
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-replace');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
+    grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-uglify');
 
     grunt.registerTask('default', ['watch'])
