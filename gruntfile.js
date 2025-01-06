@@ -96,7 +96,7 @@ module.exports = function(grunt){
                     './dist/scripts/main.min.js': './src/scripts/main.js'
                 },
             }
-        }
+        },
 
         clean:['prebuild'] //deletando o prebuild
     })
