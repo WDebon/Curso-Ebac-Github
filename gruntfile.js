@@ -19,19 +19,29 @@ module.exports = function(grunt){
                 }
             }
         },
+
         watch: {
-            less: {
+            less: { //Watching o Less
                 files:['src/styles/**/*'], //"**" = pastas || "*" = arquivo
                 tasks:['less:development']
+            },
+            html:{ //Watchign o HTML sendo trocado
+                files:['src/index.html'],
+                tasks:['replace:dev']
             }
         },
+
         replace:{
-            dev:{
+            dev:{ //Trocando o .css do HTML para o .css normal "main.css" criado no styles
                 options:{
                     patterns:[
                         {
-                            match: 'css_Dest',
+                            match: 'css_Dest', //usar @@ no links em vez do path
                             replacement: './styles/main.css'
+                        },
+                        {
+                            match: 'js_Dest', //usar @@ no script em vez do path
+                            replacement: '../src/scripts/main.js'
                         }
                     ]
                 },
@@ -43,26 +53,48 @@ module.exports = function(grunt){
                         dest:'dev/'
                     }
                 ]
+            },
+            dist:{ //Trocando o .css do HTML-minimizado para o .css-minimizado
+                options:{
+                    patterns:[
+                        {
+                            match: 'css_Dest',
+                            replacement: './styles/main.min.css'
+                        }
+                    ]
+                },
+                files:[ //colocando o html-minimizado no dist
+                    {
+                        expand: true,
+                        flatten:true,
+                        src:['./prebuild/index.html'],
+                        dest:'dist/'
+                    }
+                ]
             }
         },
-        htmlmin:{
+
+        htmlmin:{ //Minimizando o html
             dist:{
                 options:{
                     removeComments:true,
                     collapseWhitespace:true,
                 },
-                files:{
+                files:{ //Criando o arquivo prebuild temporariamente para armazenizar o hml minimizado
                     './prebuild/index.html':'./src/index.html'
                 }
             }
-        }
+        },
+
+        clean:['prebuild'] //deletando o prebuild
     })
 
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-replace');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
+    grunt.loadNpmTasks('grunt-contrib-clean');
 
     grunt.registerTask('default', ['watch'])
-    grunt.registerTask('build', ['less:production'])
+    grunt.registerTask('build', ['less:production','htmlmin:dist','replace:dist','clean'])
 }
