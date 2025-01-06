@@ -1,10 +1,13 @@
+const { file, option } = require("grunt");
+const { watch, src, dest } = require("gulp");
+
 module.exports = function(grunt){
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         less: {
             development:{
                 files:{
-                    './build/styles/mainLess.css':'./src/styles/main.less'
+                    './dev/styles/main.css':'./src/styles/main.less'
                 }
             },
             production:{
@@ -12,34 +15,54 @@ module.exports = function(grunt){
                     compress:true,
                 },
                 files:{
-                    './build/styles/mainLess.css':'./src/styles/main.less'
+                    './dist/styles/main.min.css':'./src/styles/main.less'
                 }
             }
         },
-        sass:{
+        watch: {
+            less: {
+                files:['src/styles/**/*'], //"**" = pastas || "*" = arquivo
+                tasks:['less:development']
+            }
+        },
+        replace:{
+            dev:{
+                options:{
+                    patterns:[
+                        {
+                            match: 'css_Dest',
+                            replacement: './styles/main.css'
+                        }
+                    ]
+                },
+                files:[
+                    {
+                        expand: true,
+                        flatten:true,
+                        src:['./src/index.html'],
+                        dest:'dev/'
+                    }
+                ]
+            }
+        },
+        htmlmin:{
             dist:{
                 options:{
-                    style:'compressed'
+                    removeComments:true,
+                    collapseWhitespace:true,
                 },
                 files:{
-                    './build/styles/mainSass.css':'./src/styles/main.scss'
+                    './prebuild/index.html':'./src/index.html'
                 }
             }
-        },
-        concurrent:{target:['slowTest','less','sass']}
-    })
-
-    grunt.registerTask('slowTest', function(){ //npm run slowTest
-        const done = this.async();
-        setTimeout(function(){
-            console.log("Olá grunt");
-            done();
-        },3000)
+        }
     })
 
     grunt.loadNpmTasks('grunt-contrib-less');
-    grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-concurrent');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-replace');
+    grunt.loadNpmTasks('grunt-contrib-htmlmin');
 
-    grunt.registerTask('default', ['concurrent'])
+    grunt.registerTask('default', ['watch'])
+    grunt.registerTask('build', ['less:production'])
 }

@@ -1,3 +1,43 @@
+@import 'vars.less';
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: @txtColor;
+}
+
 body{
-    background-color: red;
+    background-color: @bgColor;
+    h1{
+        font-family: @font1;
+    }
+    main{
+        max-width: 960px;
+        width: 100%;
+        margin:0 auto;
+        font-size: 2em;
+        text-align: center;
+    }
+}
+
+button{
+    padding: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.3em;
+    border-radius: 8px;
+    border: 2px solid @btnColor;
+    background-color: @btnColor;
+    color: black;
+}
+
+input{
+    display: block;
+    margin: 16px auto 20px;
+    font-size: 2em;
+    max-width: 120px;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    color: white;
+    border-bottom: 2px solid white;
 }
