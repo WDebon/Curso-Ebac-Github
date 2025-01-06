@@ -4,17 +4,20 @@ module.exports = function(grunt){
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json')
         ,
-        less: {development:{files:{'./build/styles/main.css':'./src/styles/main.less'}}} //Compilando LESS
+        //Compilando LESS
+        less: {development:{files:{'./build/styles/main.css':'./src/styles/main.less'}}}
         ,
+        //Trocando os @@ do HTML e colocando ele na ./build
         replace:{ 
             dev:{
                 options:{patterns:[{match: 'css',replacement: './styles/main.css'},{match: 'js',replacement: './scripts/main.js'}]}
                 ,
                 files: [{expand: true, flatten: true, src: ['src/index.html'], dest: 'build/'}]
             }
-        } //Trocando os @@ do HTML e colocando ele na ./build
+        } 
         ,
-        uglify:{target:{files:{'./build/scripts/main.js': './src/scripts/main.js'},}} //Comprimindo o .js
+        //Comprimindo o .js
+        uglify:{target:{files:{'./build/scripts/main.js': './src/scripts/main.js'},}}
     })
 
     grunt.loadNpmTasks('grunt-contrib-less');
