@@ -10,6 +10,6 @@ document.addEventListener('DOMContentLoaded',function(event){
         // alert(randomNumber)
 
         document.getElementById('result-number').innerText = randomNumber;
-        // document.querySelector('result').style.display = 'block';
+        document.querySelector('.result').style.display = 'block';
     })
 })
