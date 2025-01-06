@@ -3,7 +3,8 @@ const { watch, src, dest } = require("gulp");
 
 module.exports = function(grunt){
     grunt.initConfig({
-        pkg: grunt.file.readJSON('package.json'),
+        pkg: grunt.file.readJSON('package.json'), 
+        //Os tasks a seguir poderiam ter qualquer outro nome dentro que n mudaria nada (Trocar "Files" por "f" = mesmo resultado)
         less: {
             development:{
                 files:{
