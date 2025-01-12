@@ -25,12 +25,12 @@
             <ul class="hero__content__combos">
                 <li class="hero__content__combos__combo">
                     <img src="./dist/images/logos/disney_star_plus_sm.png">
-                    <button>Assine agora</button>
+                    <button class="button">Assine agora</button>
                     <span>R$ 30,00/mês*</span>
                 </li>
                 <li class="hero__content__combos__combo">
                     <img src="./dist/images/logos/disney_star_plus_starzplay.png">
-                    <button>Assine agora</button>
+                    <button class="button">Assine agora</button>
                     <span>R$ 60,00/mês*</span>
                 </li>
             </ul>
@@ -40,13 +40,14 @@
 
         </div>
     </section>
+
     <section class="shows">
         <nav class="shows__tabs">
             <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active">Em breve</button>
             <button data-tab-button="populares" class="shows__tabs__button">Mais populares</button>
             <button data-tab-button="star_plus" class="shows__tabs__button">Mais do Star+</button>
         </nav>
-        <ul data-tab-id="em_breve" class="shows__list shows__tabs__button--is-active">
+        <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
             <li class="shows__list__item">
                 <img src="./dist/images/em_breve/lobisomem.jpg">
             </li>
@@ -66,7 +67,7 @@
                 <img src="./dist/images/em_breve/lobisomem.jpg">
             </li>
         </ul>
-        <ul data-tab-id="populares" class="shows__list shows__tabs__button--is-active">
+        <ul data-tab-id="populares" class="shows__list">
             <li class="shows__list__item">
                 <img src="./dist/images/em_breve/desencantada.jpg">
             </li>
@@ -86,7 +87,7 @@
                 <img src="./dist/images/em_breve/desencantada.jpg">
             </li>
         </ul>
-        <ul data-tab-id="star_plus" class="shows__list shows__tabs__button--is-active">
+        <ul data-tab-id="star_plus" class="shows__list">
             <li class="shows__list__item">
                 <img src="./dist/images/em_breve/the_santa_clauses.jpg">
             </li>
@@ -107,6 +108,39 @@
             </li>
         </ul>
     </section>
+
+    <section class="plans">
+        <h2 class="title--big">Escolha seu plano</h2>
+        <ul class="plans__list">
+            <li class="plans__list__item">
+                <img src="./dist/images/logos/disneyplus_underline.png" alt="">
+                <strong class="title--small">R$ 67,99/mês*</strong>
+                <p class="text--big">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi iusto, vel dolor culpa esse rem nam porro qui modi quisquam adipisci voluptatibus doloribus ab dolore molest..
+                </p>
+                <button class="button">Assine agora</button>
+            </li>
+            <li class="plans__list__item">
+                <img src="./dist/images/logos/disney_star_plus_starzplay_underline.png" alt="">
+                <strong class="title--small">R$ 67,99/mês*</strong>
+                <p class="text--big">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi iusto, vel dolor culpa esse rem nam porro qui modi quisquam adipisci voluptatibus doloribus ab dolore molest..
+                </p>
+                <button class="button">Assine agora</button>
+            </li>
+            <li class="plans__list__item">
+                <img src="./dist/images/logos/disney_star_plus_sm.png" alt="">
+                <strong class="title--small">R$ 67,99/mês*</strong>
+                <p class="text--big">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi iusto, vel dolor culpa esse rem nam porro qui modi quisquam adipisci voluptatibus doloribus ab dolore molest..
+                </p>
+                <button class="button">Assine agora</button>
+            </li>
+            
+        </ul>
+        <p class="text--small">*Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas dolorum dolor numquam quasi quaerat facilis vero.</p>
+    </section>
+
     <script src="./src/scripts/main.js"></script>
 </body> 
 </html>

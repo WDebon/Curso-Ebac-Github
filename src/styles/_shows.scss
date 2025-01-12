@@ -1,7 +1,16 @@
 @use "vars";
 
+@mixin transition{
+    transition: 200ms ease-out ;
+    -webkit-transition: 200ms ease-out ;
+    -moz-transition: 200ms ease-out ;
+    -ms-transition: 200ms ease-out ;
+    -o-transition: 200ms ease-out ;
+}
+
 .shows{
     padding: 2vw 5.6vw;
+    min-height: 50vw;
     &__list{
         margin-top: 44px;
         display: none;
@@ -33,9 +42,14 @@
             background: none;
             text-transform: uppercase;
             margin: 0 1vw;
+            cursor: pointer;
+            border-bottom: solid 5px transparent;
+            @include transition();
 
             &--is-active{ 
-                border-bottom: solid 5px vars.$txtColor2;
+            @include transition();
+                
+                border-bottom-color:vars.$txtColor2;
             }
         }
     }
