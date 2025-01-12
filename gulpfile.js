@@ -1,4 +1,5 @@
 const gulp = require("gulp");
+const imagemin = require("gulp-imagemin");
 const sass = require("gulp-sass")(require("sass"));
 
 function styles(){
@@ -8,7 +9,14 @@ function styles(){
 
 }
 
-exports.default = styles;
+function images(){
+    return gulp.src("./src/images/**/*",{encoding:false})
+        .pipe(imagemin())
+        .pipe(gulp.dest("./dist/images"));
+
+}
+
+exports.default = gulp.parallel(styles,images);
 exports.watch = function(){
     gulp.watch("./src/styles/*.scss", gulp.parallel(styles)) // dentro do parallel, as funções vão ser executadas a cada mudança
 };
