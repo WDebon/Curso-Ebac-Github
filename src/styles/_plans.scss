@@ -1,11 +1,9 @@
-@use 'vars';
 
 .plans{
     padding: 5.6vw;
 
     h2{
         text-align: center;
-        color: vars.$txtColor2;
     }
 
     &__list{
@@ -31,12 +29,11 @@
             }
 
             strong{
-                color: vars.$txtColor2;
                 display: block;
             }
         }
     }
-    
+
     p{
         text-align: center;
     }
