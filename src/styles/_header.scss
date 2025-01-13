@@ -1,3 +1,55 @@
+@use 'vars';
+
+@mixin transition{
+    transition: 1400ms ease-out ;
+    -webkit-transition: 200ms ease-out ;
+    -moz-transition: 200ms ease-out ;
+    -ms-transition: 200ms ease-out ;
+    -o-transition: 200ms ease-out ;
+}
+
 .header{
-    
+    position: sticky;
+    top: 0; left: 0;
+    background-color: vars.$bgColor;
+    @include transition();
+
+
+    &--is-hidden{
+        background-color: transparent;
+
+        .header{
+            @include transition();
+
+            &__logo , &__links__items:first-child{
+                opacity: 0;
+                visibility: hidden;
+
+            }
+        }
+
+    }
+
+    &__container{
+        padding: 8px 36px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo{
+        max-width: 80px;
+        width: 100%;
+        margin: 5px;
+        @include transition();
+    }
+    &__links{
+        display: flex;
+        &__items{
+            @include transition();
+            margin: 5px;
+        }
+    }
+    .button{
+        height: 50px;
+        padding: 8px 18px;
+    }
 }

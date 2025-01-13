@@ -22,15 +22,40 @@
 }
 
 .button{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 60px;
     font-size: 18px;
     color: vars.$txtColor2;
     background-color: vars.$btnColor;
     text-transform: uppercase;
-    border-radius: 4px;
-    margin-bottom: 8px;
+    text-decoration: none;
+    padding: 8px 14;
+    letter-spacing: 1px;
+    border: 1px solid vars.$btnColor;
+
+    &--secondary{
+        background-color: vars.$btnColo2;
+        border: 1px solid vars.$btnColo2;
+        &:hover{
+            background-color: lighten(vars.$btnColo2,3%) !important;
+        }
+    }
+
+    &--dark{
+        background-color: rgba(vars.$btnColo3,0.8);
+        border: 1px solid vars.$txtColor2;
+        &:hover{
+            background-color: rgba(vars.$txtColor2,0.8) !important;
+            color: vars.$bgColor;
+        }
+    }
+
+    .button:hover{
+        background-color: lighten(vars.$btnColor,3%);
+    }
 }
 
 .image-text-section{
