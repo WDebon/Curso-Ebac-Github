@@ -7,11 +7,21 @@
     <title>Document</title>
 </head>
 <body>
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__logo"><img src="./dist/images/disneyplus.svg" alt=""></h1>
+            <ul class="header__links">
+                <li class="header__links__items button"><a href="">Assine agora</a></li>
+                <li class="header__links__items button"><a href="">Entrar</a></li>
+            </ul>
+        </div>
+    </header>
+
     <section class="hero">
         <div class="hero__content">
-            <h1 class="hero__content__branding">
+            <div class="hero__content__branding">
                 <img src="./dist/images/disneyplus.svg">
-            </h1>
+            </div>
             <h3 class="title--small">
                 As melhores histórias em um só lugar
             </h3>
@@ -232,6 +242,44 @@
             </li>
         </ul>
     </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="./dist/images/disneyplus.svg" alt="">
+            <ul class="footer__links">
+                <li class="footer__links__item">
+                    <div class="language__selector">
+                        <img src="./dist/images/icones/globe.svg">
+                        <select name="" id="">
+                        <option selected>
+                            Português
+                        </option>
+                        <option>
+                            English
+                        </option>
+                        </select>
+                    </div>
+                </li>
+                <li class="footer__links__item">
+                    <a href="" class="text--small">Lorem</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="" class="text--small">ipsum</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="" class="text--small">dolor</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="" class="text--small">Lorem</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="" class="text--small">Ipsum</a>
+                </li>
+            </ul>
+            <p class="text--small">@Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="text--small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae laboriosam vitae impedit voluptatibus, est sit in ratione quibusdam</p>
+        </div>
+    </footer>
     <script src="./src/scripts/main.js"></script>
 </body> 
 </html>
