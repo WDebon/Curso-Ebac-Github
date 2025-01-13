@@ -1,22 +1,21 @@
 {
-  "name": "curso-ebac-github",
+  "name": "clone_disneyplus",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "watch":"gulp watch",
-    "sass": "sass --watch",
+    "dev": "gulp watch",
     "build": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
-    "gulp": "^5.0.0",
-    "gulp-cli": "^3.0.0",
+    "gulp": "^4.0.2",
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^6.0.0",
-    "sass": "^1.83.1"
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.82.0"
   }
 }

@@ -1,55 +1,64 @@
-@use 'vars';
+@use 'variaveis';
 
-@mixin transition{
-    transition: 1400ms ease-out ;
-    -webkit-transition: 200ms ease-out ;
-    -moz-transition: 200ms ease-out ;
-    -ms-transition: 200ms ease-out ;
-    -o-transition: 200ms ease-out ;
-}
-
-.header{
+.header {
     position: sticky;
-    top: 0; left: 0;
-    background-color: vars.$bgColor;
-    @include transition();
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: variaveis.$corDeFundo;
+    transition: background-color .5s ease;
 
-
-    &--is-hidden{
+    &--is-hidden {
         background-color: transparent;
+        transition: background-color .5s ease;
 
-        .header{
-            @include transition();
-
-            &__logo , &__links__items:first-child{
+        .header {
+            &__logo, &__links__item:first-child {
                 opacity: 0;
                 visibility: hidden;
-
+                transition: opacity .5s ease;
             }
         }
-
     }
 
     &__container{
         padding: 8px 36px;
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: 768px) {
+            padding: 0 12px 0 20px;
+        }
     }
-    &__logo{
+
+    &__logo {
         max-width: 80px;
         width: 100%;
         margin: 5px;
-        @include transition();
-    }
-    &__links{
-        display: flex;
-        &__items{
-            @include transition();
-            margin: 5px;
+        transition: opacity .5s ease;
+
+        @media (max-width: 768px) {
+            max-width: 64px;
         }
     }
-    .button{
+
+    &__links {
+        display: flex;
+
+        &__item{
+            margin: 5px;
+            transition: opacity .5s ease;
+        }
+    }
+
+    .button {
         height: 50px;
-        padding: 8px 18px;
+
+        @media (max-width:768px) {
+            font-size: 13px;
+            padding: 8px 11px;
+            height: 40px;
+            letter-spacing: 0;
+        }
     }
 }

@@ -1,56 +1,58 @@
-@use "vars";
+@use 'variaveis';
 
-@mixin transition{
-    transition: 200ms ease-out ;
-    -webkit-transition: 200ms ease-out ;
-    -moz-transition: 200ms ease-out ;
-    -ms-transition: 200ms ease-out ;
-    -o-transition: 200ms ease-out ;
-}
-
-.shows{
+.shows {
     padding: 2vw 5.6vw;
     min-height: 50vw;
-    &__list{
+
+    &__list {
         margin-top: 44px;
         display: none;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 24px;
 
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
         &--is-active{
             display: grid;
         }
-        &__item{
-            img{
+
+        &__item {
+            img {
                 max-width: 100%;
                 border-radius: 4px;
-                -webkit-border-radius: 4px;
-                -moz-border-radius: 4px;
-                -ms-border-radius: 4px;
-                -o-border-radius: 4px;
-              }
+            }
         }
     }
-    &__tabs{
+
+    &__tabs {
         display: flex;
-        justify-content:center;
+        justify-content: center;
+
+        @media (max-width: 768px) {
+            white-space: nowrap;
+            overflow-x: scroll;
+            padding-left: 20px;
+        }
+
         &__button{
-            color: vars.$txtColor2;
+            color: variaveis.$corTextoSecundario;
             font-size: 20px;
             border: none;
             padding-bottom: 5px;
             background: none;
             text-transform: uppercase;
             margin: 0 1vw;
-            cursor: pointer;
-            border-bottom: solid 5px transparent;
-            @include transition();
+            border-bottom: 5px solid transparent;
 
-            &--is-active{ 
-            @include transition();
-                
-                border-bottom-color:vars.$txtColor2;
+            &--is-active {
+                border-color: variaveis.$corTextoSecundario;
             }
+
+            @media (max-width: 768px) {
+                font-size: 16px;
+            }   
         }
     }
 }
