@@ -1,25 +1,70 @@
-// document.addEventListener("DOMCOntentLoaded",function(e){
-//         document.getElementById("btn-buscar-cep").addEventListener('click',function(){
-//             const xhttp = new XMLHttpRequest();
-//             const cep =  document.getElementById("cep").value;
-//             const endpoint = `https://viacep.com.br/ws/${cep}/json`;
-//             xhttp.open("GET", endpoint);
-//             xhttp.send();
-//         });
-// })
+// Example of fetching GitHub profile data using AJAX (XMLHttpRequest)
+
+document.addEventListener('DOMContentLoaded', function() {
+
+        const nameElement = document.querySelector('#name');
+        const usernameElement = document.querySelector('#username');
+        const avatarElement = document.querySelector('#avatar');
+        const reposElement = document.querySelector('#repos');
+        const followersElement = document.querySelector('#followers');
+        const followingElement = document.querySelector('#following');
+        const linkElement = document.querySelector('#profile-link');
+
+    try {
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', 'https://api.github.com/users/maxh33', true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                const data = JSON.parse(xhr.responseText);
+                if (nameElement) nameElement.innerText = data.name;
+                if (usernameElement) usernameElement.innerText = data.login;
+                if (avatarElement) avatarElement.src = data.avatar_url;
+                if (followingElement) followingElement.innerText = data.following;
+                if (followersElement) followersElement.innerText = data.followers;
+                if (reposElement) reposElement.innerText = data.public_repos;
+                if (linkElement) linkElement.href = data.html_url;
+            } else if (xhr.readyState === 4) {
+                console.error('Error fetching data:', xhr.statusText);
+            }
+        };
+        xhr.send();
+    } catch (error) {
+        console.error('Error fetching data:', error.message);
+    }
+});
 
 
-$(document).jquery(function() {
-    $('#btn-buscar-cep').on("click",function() {
-        const cep = $('#cep').val();
-        const endpoint = `https://viacep.com.br/ws/${cep}/json`;
-        $.ajax(endpoint).done(function(e) {
-            const logr = e.logr;
-            const street = e.street;
-            const city = e.city;
-            const state = e.state;
-            const adress = `${logr},${street}-${city}-${state}`
-            $("#endereco").val(street);
-        })
-    })
-})
+// Example of fetching GitHub profile data using the Fetch API
+    
+        // document.addEventListener('DOMContentLoaded', function() {
+        //     const nameElement = document.querySelector('#name');
+        //     const usernameElement = document.querySelector('#username');
+        //     const avatarElement = document.querySelector('#avatar');
+        //     const reposElement = document.querySelector('#repos');
+        //     const followersElement = document.querySelector('#followers');
+        //     const followingElement = document.querySelector('#following');
+        //     const linkElement = document.querySelector('#profile-link');
+        //     try {
+        //          fetch('https://api.github.com/users/maxh33')
+        //              .then(function(res) {
+        //                  if (!res.ok) {
+        //                      throw new Error('Network response was not ok ' + res.statusText);
+        //                  }
+        //                  return res.json();
+        //             })
+        //             .then(function(data) {
+        //                 if (nameElement) nameElement.innerText = data.name;
+        //                 if (usernameElement) usernameElement.innerText = data.login;
+        //                 if (avatarElement) avatarElement.src = data.avatar_url;
+        //                 if (followingElement) followingElement.innerText = data.following;
+        //                 if (followersElement) followersElement.innerText = data.followers;
+        //                 if (reposElement) reposElement.innerText = data.public_repos;
+        //                 if (linkElement) linkElement.href = data.html_url;
+        //             })
+        //             .catch(function(err) {
+        //                 console.error('Error fetching data:', err.message);
+        //             });
+        //      } catch (error) {
+        //          console.error('Error fetching data:', error.message);
+        //      }
+        // });
