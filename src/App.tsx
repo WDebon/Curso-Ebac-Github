@@ -1,22 +1,26 @@
-import { ThemeProvider } from 'styled-components'
-import Hero from './components/Hero'
-import ListaVagas from './containers/ListaVagas'
+import Header from './components/Header'
+import Produtos from './containers/Produtos'
 
-import themeOrigin from './containers/theme/origin'
+import { GlobalStyle } from './styles'
+import { Provider } from 'react-redux'
+import { store } from './store'
 
-import Cabecalho from './components/Cabecalho'
-import EstiloGlobal, { Container } from './styles'
+export type Produto = {
+  id: number
+  nome: string
+  preco: number
+  imagem: string
+}
 
 function App() {
   return (
-    <ThemeProvider theme={themeOrigin}>
-      <EstiloGlobal />
-      <Cabecalho />
-      <Hero />
-      <Container>
-        <ListaVagas />
-      </Container>
-    </ThemeProvider>
+    <Provider store={store}>
+      <GlobalStyle />
+      <div className="container">
+        <Header />
+        <Produtos />
+      </div>
+    </Provider>
   )
 }
 
